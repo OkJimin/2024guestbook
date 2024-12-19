@@ -24,8 +24,8 @@
             margin-bottom: 20px;
         }
         .image-container img {
-            max-width: 100%; /* 이미지 크기를 화면 크기에 맞게 조정 */
-            height: auto;
+            max-width: 80%; /* 이미지 크기를 80%로 제한 */
+            height: auto; /* 비율에 맞게 자동 조정 */
             border-radius: 10px; /* 이미지에 둥근 모서리 추가 */
         }
         textarea {
@@ -76,7 +76,7 @@
 
         <!-- 이미지 추가 부분 -->
         <div class="image-container">
-            <img src="{{ url_for('static', filename='Merry Christmas.png') }}" alt="크리스마스 이미지">
+            <img src="{{ url_for('static', filename='christmas.jpg') }}" alt="크리스마스 이미지">
         </div>
 
         {% if error %}
